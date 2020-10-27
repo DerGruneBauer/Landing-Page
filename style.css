@@ -1,0 +1,167 @@
+/* Universal */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: 	#ff7a7a;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23c96363' fill-opacity='0.43'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+
+/* Form */
+.slogan{
+    font-size: 30px;
+    padding: 5px;
+    font-weight: bolder;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.intro{
+    width: 310px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.tryIt{
+    border-radius: 10px;
+    background-color: #534e94;
+    color: white;
+    border: none;
+    width: 150px;
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 1.9;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    margin-top: 50px;
+    padding: 30px 77px;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, .25);
+}
+
+form{
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, .25);
+}
+
+input{
+    margin: 5px;
+    height: 40px;
+    width: 250px;
+    border-radius: 4px;
+    border: lightgray solid 1px;
+    padding-left: 20px;
+}
+
+::placeholder{
+    color:slategray;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+input:hover, button:hover, a:hover{
+    cursor: pointer;
+}
+
+#firstName{
+    margin-top: 20px;
+}
+
+strong{
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.claimTrial{
+    background-color:	#38cc8c;
+    color: white;
+    height: 40px;
+    width: 255px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    margin-top: 5px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .25);
+}
+
+.finePrint{
+    font-size: 10px;
+    height: 55px;
+    width: 200px;
+    line-height: 18px;
+    margin-top: 8px;
+    color: lightgray;
+    text-align: center;
+}
+
+.terms{
+    color: orangered;
+    text-decoration: none;
+}
+
+/* Footer */
+
+.attribution{
+    font-size: 10px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1440px) {
+/*Universal*/
+body{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ }
+
+/*Left Side of Screen*/
+ .slogan{
+     font-size: 50px;
+ }
+
+.intro{
+    text-align: left;
+    width: 500px;
+    margin-right: 75px;
+}
+
+/*Right side of Screen*/
+.intro, .overallForm{
+    margin-top: 100px;
+}
+
+.tryIt{
+    width: 490px;
+    height: 40px;
+    padding: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+form, .finePrint{
+    width: 500px;
+}
+
+input, .claimTrial{
+    width: 420px;
+}
+
+  }
